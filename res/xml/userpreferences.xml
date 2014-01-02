@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <CheckBoxPreference
+        android:defaultValue="true"
+        android:key="RECORD_ON"
+        android:summary="Record sensors values and delay."
+        android:title="Log Files" />
+    <CheckBoxPreference
+        android:defaultValue="true"
+        android:key="NOTIFICATION_ON"
+        android:summary="Show notifications when service status changed."
+        android:title="Notification" />
+    <CheckBoxPreference
+        android:defaultValue="true"
+        android:key="SERVICE_ON"
+        android:summary="Activate to stop the Service at the upTime selected."
+        android:title="Service" />
+
+    <ListPreference
+        android:defaultValue="300"
+        android:dialogTitle="UpTime"
+        android:entries="@array/upTime_options"
+        android:entryValues="@array/upTime_values"
+        android:key="UPTIME_FREQ"
+        android:summary="Set an upTime when to stop the Service."
+        android:title="UpTime Frequency" />
+
+</PreferenceScreen>

@@ -1,0 +1,82 @@
+<resources>
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+    <style name="CustomTheme" parent="android:Theme.Black">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+
+    <style name="apptext">
+        <item name="android:textSize">13sp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+    <style name="appbutton" parent="apptext"></style>
+
+    <style name="appbuttoninlist" parent="apptext">
+        <item name="android:padding">0dip</item>
+    </style>
+
+    <style name="line_seperator">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">2dip</item>
+        <item name="android:color">#EEEEEE</item>
+    </style>
+
+    <style name="xyz" parent="@android:style/TextAppearance.Medium">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:typeface">monospace</item>
+    </style>
+
+    <style name="sTittle" parent="@android:style/TextAppearance.Medium">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">#EEEEEE</item>
+        <item name="android:padding">8dp</item>
+        <item name="android:textSize">17sp</item>
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:typeface">monospace</item>
+    </style>
+
+    <style name="buttons" parent="@android:style/TextAppearance.Medium">
+        <item name="android:layout_width">90dip</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:onClick">onClickDelayButtons</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+    <style name="text_color">
+        <item name="android:color">#000000</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="ActionBar">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">@dimen/actionbar_height</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:background">@drawable/actionbar_background</item>
+    </style>
+
+    <style name="ActionBarItem">
+        <item name="android:layout_width">@dimen/actionbar_item_width</item>
+        <item name="android:layout_height">@dimen/actionbar_height</item>
+        <item name="android:padding">5dp</item>
+        <item name="android:layout_marginLeft">1px</item>
+    </style>
+
+    <style name="ActionBarHomeItem" parent="ActionBarItem">
+        <item name="android:layout_marginRight">1px</item>
+        <item name="android:layout_marginLeft">0px</item>
+    </style>
+
+    <style name="ActionBarProgressBar" parent="@android:style/Widget.ProgressBar.Small"></style>
+
+</resources>

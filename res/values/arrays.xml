@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="upTime_options">
+        <item>10 Seconds</item>
+        <item>1 Min</item>
+        <item>5 Min</item>
+        <item>15 Min</item>
+        <item>30 Min</item>
+        <item>1 Hour</item>
+        <item>1 Day</item>
+    </string-array>
+    <string-array name="upTime_values">
+        <item>10</item>
+        <item>60</item>
+        <item>300</item>
+        <item>900</item>
+        <item>1800</item>
+        <item>3600</item>
+        <item>86400</item>
+    </string-array>
+
+</resources>

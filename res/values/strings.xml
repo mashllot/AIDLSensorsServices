@@ -1,0 +1,48 @@
+<resources>
+
+    <string name="app_name">AIDL Sensors Service</string>
+    <string name="upTime_prompt">Service upTime</string>
+    <string name="menu_preferences">Preferences</string>
+    <string name="service_on">Service On?</string>
+    <string name="notif_on">Service is running</string>
+    <string name="notification_on">Notification On?</string>
+    <string name="title_activity_main">AIDL Sensors Service</string>
+    <string name="xLabel">X :</string>
+    <string name="yLabel">Y :</string>
+    <string name="zLabel">Z :</string>
+    <string name="lLabel">Light :</string>
+    <string name="delayLabel">Delay :</string>
+    <string name="delay_unit"> (ms)</string>
+    <string name="accel_title">Accelerometer Sensor</string>
+    <string name="gyro_title">Gyroscope Sensor</string>
+    <string name="magne_title">Magnetic Sensor</string>
+    <string name="light_title">Light Sensor</string>
+    <string name="notify_title">AIDL Services</string>
+    <string name="some_title">Other Activity</string>
+
+    <string-array name="accelSpinner">
+        <item>Fast</item>
+        <item>Game</item>
+        <item>Ui</item>
+        <item>Normal</item>
+    </string-array>
+    <string-array name="gyroSpinner">
+        <item>Fast</item>
+        <item>Game</item>
+        <item>Ui</item>
+        <item>Normal</item>
+    </string-array>
+    <string-array name="magneSpinner">
+        <item>Fast</item>
+        <item>Game</item>
+        <item>Ui</item>
+        <item>Normal</item>
+    </string-array>
+    <string-array name="lightSpinner">
+        <item>Fast</item>
+        <item>Game</item>
+        <item>Ui</item>
+        <item>Normal</item>
+    </string-array>
+
+</resources>

@@ -1,0 +1,68 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.zak.aidlsensorsservices"
+    android:versionCode="30"
+    android:versionName="3.0" >
+
+    <uses-sdk
+        android:maxSdkVersion="19"
+        android:minSdkVersion="16"
+        android:targetSdkVersion="19" />
+
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/text_color" >
+        <activity
+            android:name="com.zak.aidlsensorsservices.MainActivity"
+            android:clearTaskOnLaunch="true"
+            android:configChanges="orientation"
+            android:label="@string/title_activity_main"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.DeviceDefault.Light.NoActionBar" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.zak.aidlsensorsservices.AboutActivity"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="com.zak.aidlsensorsservices.FragmentPreferences"
+            android:theme="@android:style/Theme.DeviceDefault.Light.NoActionBar" />
+
+        <service
+            android:name="com.zak.aidlsensorsservices.AccelService"
+            android:enabled="true"
+            android:permission="com.zak.MY_SERVICE_PERMISSION"
+            android:process="com.zak.accelerometerservice.AccelService" >
+        </service>
+        <service
+            android:name="com.zak.aidlsensorsservices.GyroService"
+            android:enabled="true"
+            android:permission="com.zak.MY_SERVICE_PERMISSION"
+            android:process="com.zak.accelerometerservice.GyroService" >
+        </service>
+        <service
+            android:name="com.zak.aidlsensorsservices.MagneService"
+            android:enabled="true"
+            android:permission="com.zak.MY_SERVICE_PERMISSION"
+            android:process="com.zak.accelerometerservice.MagneService" >
+        </service>
+        <service
+            android:name="com.zak.aidlsensorsservices.LightService"
+            android:enabled="true"
+            android:permission="com.zak.MY_SERVICE_PERMISSION"
+            android:process="com.zak.accelerometerservice.LightService" >
+        </service>
+    </application>
+
+</manifest>

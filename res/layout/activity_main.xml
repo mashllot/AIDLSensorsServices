@@ -1,0 +1,481 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <com.zak.aidlsensorsservices.widget.ActionBar
+        android:id="@+id/actionbar"
+        style="@style/ActionBar" />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="#fffe92"
+            android:orientation="vertical" >
+
+            <!-- TYPE_ACCELEROMETER -->
+
+            <LinearLayout
+                android:id="@+id/accelerometer_linearLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/accelerometer"
+                    style="@style/sTittle"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".7"
+                    android:text="@string/accel_title" />
+
+                    <!-- Spinner -->
+
+                    <Spinner
+                        android:id="@+id/accelSpinner"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right"
+                        android:layout_weight=".3" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/x_linearLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <!-- X axis -->
+
+                <TextView
+                    android:id="@+id/accel_xLabel"
+                    style="@style/xyz"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/xLabel" />
+
+                <TextView
+                    android:id="@+id/accel_x"
+                    style="@style/xyz"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/y_linearLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <!-- Y axis -->
+
+                <TextView
+                    android:id="@+id/accel_yLabel"
+                    style="@style/xyz"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/yLabel" />
+
+                <TextView
+                    android:id="@+id/accel_y"
+                    style="@style/xyz"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/z_linearLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <!-- Z axis -->
+
+                <TextView
+                    android:id="@+id/accel_zLabel"
+                    style="@style/xyz"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/zLabel" />
+
+                <TextView
+                    android:id="@+id/accel_z"
+                    style="@style/xyz"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/delay_linearLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <!-- Delay -->
+
+                <TextView
+                    android:id="@+id/accel_delayLabel"
+                    style="@style/xyz"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/delayLabel" />
+
+                <TextView
+                    android:id="@+id/accel_delayValue"
+                    style="@style/xyz"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/accel_delayUnit"
+                    style="@style/xyz"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/delay_unit" />
+            </LinearLayout>
+
+            <!-- TYPE_GYROSCOPE -->
+
+            <LinearLayout
+                android:id="@+id/gyroscope_linearLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/gyroscope"
+                    style="@style/sTittle"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".7"
+                    android:text="@string/gyro_title" />
+
+                <!-- Spinner -->
+
+                <Spinner
+                    android:id="@+id/gyroSpinner"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_weight=".3" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/xGyro_linearLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <!-- X axis -->
+
+                <TextView
+                    android:id="@+id/gyro_xLabel"
+                    style="@style/xyz"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/xLabel" />
+
+                <TextView
+                    android:id="@+id/gyro_x"
+                    style="@style/xyz"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/yGyro_linearLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <!-- Y axis -->
+
+                <TextView
+                    android:id="@+id/gyro_yLabel"
+                    style="@style/xyz"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/yLabel" />
+
+                <TextView
+                    android:id="@+id/gyro_y"
+                    style="@style/xyz"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/zGyro_linearLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <!-- Z axis -->
+
+                <TextView
+                    android:id="@+id/gyro_zLabel"
+                    style="@style/xyz"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/zLabel" />
+
+                <TextView
+                    android:id="@+id/gyro_z"
+                    style="@style/xyz"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/delayGyro_linearLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <!-- Delay -->
+
+                <TextView
+                    android:id="@+id/gyro_delayLabel"
+                    style="@style/xyz"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/delayLabel" />
+
+                <TextView
+                    android:id="@+id/gyro_delayValue"
+                    style="@style/xyz"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/gyro_delayUnit"
+                    style="@style/xyz"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/delay_unit" />
+            </LinearLayout>
+
+            <!-- TYPE_MAGNETIC -->
+
+            <LinearLayout
+                android:id="@+id/magnetic_linearLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/magnetic"
+                    style="@style/sTittle"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".7"
+                    android:text="@string/magne_title" />
+
+                <!-- Spinner -->
+
+                <Spinner
+                    android:id="@+id/magneSpinner"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_weight=".3" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/xMagne_linearLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <!-- X axis -->
+
+                <TextView
+                    android:id="@+id/magne_xLabel"
+                    style="@style/xyz"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/xLabel" />
+
+                <TextView
+                    android:id="@+id/magne_x"
+                    style="@style/xyz"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/yMagne_linearLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <!-- Y axis -->
+
+                <TextView
+                    android:id="@+id/magne_yLabel"
+                    style="@style/xyz"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/yLabel" />
+
+                <TextView
+                    android:id="@+id/magne_y"
+                    style="@style/xyz"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/zMagne_linearLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <!-- Z axis -->
+
+                <TextView
+                    android:id="@+id/magne_zLabel"
+                    style="@style/xyz"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/zLabel" />
+
+                <TextView
+                    android:id="@+id/magne_z"
+                    style="@style/xyz"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/delayMagne_linearLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <!-- Delay -->
+
+                <TextView
+                    android:id="@+id/magne_delayLabel"
+                    style="@style/xyz"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/delayLabel" />
+
+                <TextView
+                    android:id="@+id/magne_delayValue"
+                    style="@style/xyz"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/magne_delayUnit"
+                    style="@style/xyz"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/delay_unit" />
+            </LinearLayout>
+
+            <!-- TYPE_LIGHT -->
+
+            <LinearLayout
+                android:id="@+id/light_linearLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/light"
+                    style="@style/sTittle"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".7"
+                    android:text="@string/magne_title" />
+
+                <!-- Spinner -->
+
+                <Spinner
+                    android:id="@+id/lightSpinner"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_weight=".3" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/xLight_linearLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <!-- L axis -->
+
+                <TextView
+                    android:id="@+id/light_lLabel"
+                    style="@style/xyz"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/lLabel" />
+
+                <TextView
+                    android:id="@+id/light_l"
+                    style="@style/xyz"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/delayLight_linearLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <!-- Delay -->
+
+                <TextView
+                    android:id="@+id/light_delayLabel"
+                    style="@style/xyz"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/delayLabel" />
+
+                <TextView
+                    android:id="@+id/light_delayValue"
+                    style="@style/xyz"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/light_delayUnit"
+                    style="@style/xyz"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/delay_unit" />
+            </LinearLayout>
+
+            <!-- Bottuns -->
+
+            <LinearLayout
+                android:id="@+id/button_linearLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <ToggleButton
+                    android:id="@+id/toggleServiceButton"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:onClick="onServiceToggleClicked"
+                    android:textOff="Start"
+                    android:textOn="Stop" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
