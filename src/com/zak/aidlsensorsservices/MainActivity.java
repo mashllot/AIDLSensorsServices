@@ -1032,16 +1032,12 @@ public class MainActivity extends Activity {
 
 	/** Check if notificationOnChecked is true */
 	public void ifNotificationOnChecked() {
-		if (notificationOnChecked) {
-			if (bNotification) {
-				notifyMain("Autostop:\n" + upTime + " s", "Recording...");
-			} else {
-				if (notificationManager != null) {
-					notificationManager.cancelAll();
-				}
-			}
+		if (notificationOnChecked && bNotification) {
+			notifyMain("Autostop:\n" + upTime + " s", "Recording...");
 		} else {
-			notificationManager.cancelAll();
+			if (notificationManager != null) {
+				notificationManager.cancelAll();
+			}
 		}
 	}
 

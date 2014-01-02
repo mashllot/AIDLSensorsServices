@@ -1,6 +1,6 @@
 /*
  * This file is auto-generated.  DO NOT MODIFY.
- * Original file: D:\\TestingProjects\\AIDLSensorsServices\\src\\com\\zak\\aidlsensorsservices\\IGETAccelData.aidl
+ * Original file: D:\\GITHUB\\AIDLSensorsServices\\src\\com\\zak\\aidlsensorsservices\\IGETAccelData.aidl
  */
 package com.zak.aidlsensorsservices;
 public interface IGETAccelData extends android.os.IInterface

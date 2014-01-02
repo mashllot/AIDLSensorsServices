@@ -1,6 +1,6 @@
 /*
  * This file is auto-generated.  DO NOT MODIFY.
- * Original file: D:\\TestingProjects\\AIDLSensorsServices\\src\\com\\zak\\aidlsensorsservices\\IGETGyroData.aidl
+ * Original file: D:\\GITHUB\\AIDLSensorsServices\\src\\com\\zak\\aidlsensorsservices\\IGETGyroData.aidl
  */
 package com.zak.aidlsensorsservices;
 public interface IGETGyroData extends android.os.IInterface

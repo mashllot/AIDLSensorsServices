@@ -1,6 +1,6 @@
 /*
  * This file is auto-generated.  DO NOT MODIFY.
- * Original file: D:\\TestingProjects\\AIDLSensorsServices\\src\\com\\zak\\aidlsensorsservices\\IGETLightData.aidl
+ * Original file: D:\\GITHUB\\AIDLSensorsServices\\src\\com\\zak\\aidlsensorsservices\\IGETLightData.aidl
  */
 package com.zak.aidlsensorsservices;
 public interface IGETLightData extends android.os.IInterface
